@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="wap/public/head"/>
+    <link rel="stylesheet" href="__TMPL__/asset/css/index.css">
+</head>
+<body class="wrapper">
+<div>
+    <div id="wrapper">
+        <div class="overlay"></div>
+
+        <include file="wap/public/sidebar"/>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="head-fix">
+                <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+                <!--<p class="head-p">网站</p>-->
+            </div>
+
+
+            <div class="container">
+                <include file="public/logo"/>
+
+                <div class="loop-album pt100" style="display: block;">
+                    <ul class="m-album">
+                        <li>
+                            <a href="{:url('index/introduce')}"><img src="__TMPL__/asset/images/album/profile-sm.png" alt=""></a>
+                            <h6><a href={:url('index/introduce')}">企业简介 Company profile</a></h6>
+                        </li>
+                        <li>
+                            <a href="{:url('index/cases')}"><img src="__TMPL__/asset/images/album/case-sm.png" alt=""></a>
+                            <h6><a href="{:url('index/cases')}">成功案例 Success cases </a></h6>
+                        </li>
+                        <li>
+                            <a href="{:url('index/info')}"><img src="__TMPL__/asset/images/album/infor-sm.png" alt=""></a>
+                            <h6><a href="{:url('index/info')}">行业资讯 Industry information</a></h6>
+                        </li>
+                        <li>
+                            <a href="{:url('index/service')}"><img src="__TMPL__/asset/images/album/project-sm.png" alt=""></a>
+                            <h6><a href="{:url('index/service')}">服务项目 Service items </a></h6>
+                        </li>
+                        <li>
+                            <a href="{:url('index/team')}"><img src="__TMPL__/asset/images/album/members-sm.png" alt=""></a>
+                            <h6><a href="{:url('index/team')}">团队成员 Our stuff</a></h6>
+                        </li>
+                        <li>
+                            <a href="{:url('index/news')}"><img src="__TMPL__/asset/images/album/dynamic-sm.png" alt=""></a>
+                            <h6><a href="{:url('index/news')}">公司动态 Company news</a></h6>
+                        </li>
+                        <li>
+                            <a href="{:url('index/contact')}"><img src="__TMPL__/asset/images/album/contact-sm.png" alt=""></a>
+                            <h6><a href="{:url('index/contact')}">联系我们 Contact us</a></h6>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <include file="wap/public/bgm"/>
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+</div>
+
+<script src="__TMPL__/asset/js/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="__TMPL__/asset/js/mobile.js"></script>
+</body>
+</html>

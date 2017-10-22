@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="wap/public/head"/>
+</head>
+<body class="wrapper">
+<div>
+    <div id="wrapper">
+        <div class="overlay"></div>
+        <include file="wap/public/sidebar"/>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="head-fix">
+                <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+                <!--<p class="head-p">网站</p>-->
+            </div>
+
+            <div class="container">
+                <include file="public/logo"/>
+                <include file="public/back"/>
+
+                <div class="main-wrap pt80">
+                    <div class="intro-nav">
+                        <h1><span>行业资讯</span><i class="intro-icon"></i></h1>
+                    </div>
+                    <div class="intro-main">
+                        <div class="intro-banner"><img src="__TMPL__/asset/images/banner/info.png"></div>
+                        <div class="intro-content infor-ul">
+                            <ul>
+                                <li>
+                                    <a href="m_pages.html"><p>行业资讯文章的标题行业资讯文章的标题行业资讯文章的标题行业资讯文章的标题行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>行业资讯文章的标题</p><span>2017-9-30</span></a>
+                                </li>
+                            </ul>
+                            <div class="case-button" >
+                                <div class="case-prev"></div>
+                                <div class="case-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <include file="wap/public/bgm"/>
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+</div>
+
+<script src="__TMPL__/asset/js/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="__TMPL__/asset/js/mobile.js"></script>
+<script src="__TMPL__/asset/js/swiper-3.3.1.jquery.min.js"></script>
+<script src="__TMPL__/asset/js/dropload.js"></script>
+<script src="__TMPL__/asset/js/script.js"></script>
+<script>
+
+    var hclone = $('.intro-nav').clone();
+    hclone.insertAfter($(".intro-banner"));
+    $(".intro-nav").eq(0).hide();
+    $(".intro-nav").css({"margin":"20px 0 -16px"});
+
+    var page = 1;
+    // 每页展示10个
+    var size = 10;
+    // dropload
+    var dropload = $('body').dropload({
+        scrollArea : window,
+        domDown : {
+            domClass   : 'dropload-down',
+            domRefresh : '<div class="dropload-refresh">↓下拉加载更多↓</div>',
+            domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+            domNoData  : '<div class="dropload-noData">暂无更多内容</div>'
+        },
+        loadDownFn : function(me){
+            // 加载菜单一的数据
+            page++;
+            $.ajax({
+                type: 'GET',
+                url: 'http://ons.me/tools/dropload/json.php?page='+page+'&size='+size,
+                dataType: 'json',
+                success: function(data){
+                    var results = "";
+//                    var arrLens = data.data.query_count;
+                    var arrLens = 1;
+                    if(arrLens > 0){
+                        for(var i=0; i<arrLens; i++){
+                            results += '<li><a href="pages.html"><p>行业资讯文章的标题'+i+'</p><span>2017-9-30</span></a>';
+                        }
+                        // 如果没有数据
+                    }else{
+                        // 锁定
+                        me.lock();
+                        // 无数据
+                        me.noData();
+                    }
+                    $('.intro-content ul').append(results);
+                    me.resetload();
+
+                },
+                error: function(xhr, type){
+                    //alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            })
+        }
+    });
+
+</script>
+</body>
+</html>

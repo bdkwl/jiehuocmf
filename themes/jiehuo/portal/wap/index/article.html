@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="wap/public/head"/>
+</head>
+<body class="wrapper">
+<div>
+    <div id="wrapper">
+        <div class="overlay"></div>
+        <include file="wap/public/sidebar"/>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="head-fix">
+                <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+                <!--<p class="head-p">网站</p>-->
+            </div>
+
+            <div class="container">
+                <include file="public/logo"/>
+                <include file="public/back"/>
+
+                <div class="main-wrap pt80 conten-page">
+                    <h1>title1</h1>
+                    <span class="page-data">2017-09-30 17:30</span>
+                    <p>这是内容</p>
+                    <p>下面是图片这个层里面的随便编辑</p>
+                    <img src="__TMPL__/asset/images/logo.png">
+
+                </div>
+
+                <include file="wap/public/bgm"/>
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+</div>
+
+<script src="__TMPL__/asset/js/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="__TMPL__/asset/js/mobile.js"></script>
+<script src="__TMPL__/asset/js/swiper-3.3.1.jquery.min.js"></script>
+<script src="__TMPL__/asset/js/intro.js"></script>
+<script src="__TMPL__/asset/js/script.js"></script>
+</body>
+</html>

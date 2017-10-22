@@ -1,0 +1,107 @@
+<!-- Sidebar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <div class="nav sidebar-nav">
+        <li class="sidebar-brand">
+            <a href=""></a>
+        </li>
+
+        <li <eq name="cururl" value="/portal/index/index.html">class="cur"</eq>>
+        <eq name="curaction" value="index">
+            <a class="nax-i cur" href="{:url('index/index')}">网站首页<i class="fa fa-fw intro-icon"></i></a>
+            <else/>
+            <a href="{:url('index/index')}">网站首页<i class="fa fa-fw "></i></a>
+        </eq>
+        </li>
+
+        <li <eq name="curaction" value="introduce">class="seltop"</eq>>
+            <eq name="curaction" value="introduce">
+                <a class="nax-i cur" href="{:url('index/introduce')}">企业简介<i class="fa fa-fw intro-icon"></i></a>
+                <else/>
+                <a class="nax-i" href="{:url('index/introduce')}">企业简介<i class="fa fa-fw"></i></a>
+            </eq>
+            <ul >
+                <li <eq name="cururl" value="/portal/index/introduce.html">class="cur"</eq>>
+                    <a href="{:url('index/introduce')}">关于我们</a>
+                </li>
+                <li <eq name="cururl" value="/portal/index/introduce/type/2.html">class="cur"</eq>>
+                    <a href="{:url('index/introduce', ['type' => 2])}">发展历程</a>
+                </li>
+                <li <eq name="cururl" value="/portal/index/introduce/type/3.html">class="cur"</eq>>
+                    <a href="{:url('index/introduce', ['type' => 3])}">服务理念</a>
+                </li>
+                <li <eq name="cururl" value="/portal/index/introduce/type/4.html">class="cur"</eq>>
+                    <a href="{:url('index/introduce', ['type' => 4])}">团队精神</a>
+                </li>
+                <li <eq name="cururl" value="/portal/index/introduce/type/5.html">class="cur"</eq>>
+                    <a href="{:url('index/introduce', ['type' => 5])}">展望未来</a>
+                </li>
+            </ul>
+        </li>
+
+        <li  <eq name="cururl" value="/portal/index/cases.html">class="cur"</eq>>
+        <eq name="curaction" value="cases">
+            <a class="nax-i cur" href="{:url('index/cases')}">成功案例<i class="fa fa-fw intro-icon"></i></a>
+            <else/>
+            <a href="{:url('index/cases')}">成功案例<i class="fa fa-fw "></i></a>
+        </eq>
+        </li>
+
+        <li  <eq name="cururl" value="/portal/index/info.html">class="cur"</eq>>
+            <eq name="curaction" value="info">
+                <a class="nax-i cur" href="{:url('index/info')}">行业资讯<i class="fa fa-fw intro-icon"></i></a>
+                <else/>
+                <a href="{:url('index/info')}">行业资讯<i class="fa fa-fw "></i></a>
+            </eq>
+        </li>
+
+        <li  <eq name="cururl" value="/portal/index/service.html">class="cur"</eq>>
+            <eq name="curaction" value="service">
+                <a class="nax-i cur" href="{:url('index/service')}">服务项目<i class="fa fa-fw intro-icon"></i></a>
+                <else/>
+                <a href="{:url('index/service')}">服务项目<i class="fa fa-fw "></i></a>
+            </eq>
+        </li>
+
+        <li <eq name="curaction" value="team">class="seltop"</eq> >
+        <eq name="curaction" value="team">
+            <a class="nax-i cur" href="{:url('index/team')}">团队成员<i class="fa fa-fw intro-icon"></i></a>
+            <else/>
+            <a class="nax-i" href="{:url('index/team')}">团队成员<i class="fa fa-fw "></i></a>
+        </eq>
+            <ul>
+                <li  <eq name="cururl" value="/portal/index/team.html">class="cur"</eq>>
+                    <a href="{:url('index/team', ['type' => 1])}">成员介绍</a>
+                </li>
+                <li  <eq name="cururl" value="/portal/index/team/type/2.html">class="cur"</eq>>
+                    <a href="{:url('index/team', ['type' => 2])}">办公环境</a>
+                </li>
+            </ul>
+        </li>
+
+        <li  <eq name="cururl" value="/portal/index/news.html">class="cur"</eq>>
+        <eq name="curaction" value="news">
+            <a class="nax-i cur" href="{:url('index/news')}">公司动态<i class="fa fa-fw intro-icon"></i></a>
+            <else/>
+            <a href="{:url('index/news')}">公司动态<i class="fa fa-fw "></i></a>
+        </eq>
+        </li>
+
+        <li <eq name="curaction" value="contact">class="seltop"</eq>>
+        <eq name="curaction" value="contact">
+            <a class="nax-i cur" href="{:url('index/contact')}">联系我们<i class="fa fa-fw intro-icon"></i></a>
+            <else/>
+            <a href="{:url('index/contact')}">联系我们<i class="fa fa-fw "></i></a>
+        </eq>
+            <ul>
+                <li  <eq name="cururl" value="/portal/index/contact.html">class="cur"</eq>>
+                    <a href="{:url('index/contact')}">联系我们</a>
+                </li>
+                <li  <eq name="cururl" value="/portal/index/contact/type/2.html">class="cur"</eq>>
+                    <a href="{:url('index/contact', ['type' => 2])}">关注我们</a>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+<!-- /#sidebar-wrapper -->

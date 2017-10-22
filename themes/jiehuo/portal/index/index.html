@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="public/head"/>
+    <link rel="stylesheet" href="__TMPL__/asset/css/index.css">
+</head>
+<body>
+<div class="loading"></div>
+<div class="wrapper">
+    <div class="container">
+        <include file="public/logo"/>
+
+        <div class="main-wrap pt80">
+            <!-- 宣传短片 -->
+            <div class="video-wrap" >
+                <video id="vvideo" autoplay src="http://ou1z1q8b2.bkt.clouddn.com/jiehuo/source/2017090417411e60b634ec65c233a154e234c1a6b76b22b33d9e.mp4"></video>
+                <div class="video-pause"><img src="__TMPL__/asset/images/pause.png" alt=""></div>
+                <div class="video-skip"><a href="{:url('index/main')}"><span>跳过</span><img src="__TMPL__/asset/images/arrow-right.png" alt=""></a></div>
+            </div>
+            <!-- ./宣传短片 -->
+        </div>
+
+
+        <include file="public/footer"/>
+    </div>
+
+
+</div>
+
+<script src="__TMPL__/asset/js/jquery.js"></script>
+<script src="__TMPL__/asset/js/index-video.js"></script>
+</body>
+</html>

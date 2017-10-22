@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="public/head"/>
+    <link rel="stylesheet" href="__TMPL__/asset/css/index.css">
+</head>
+<body>
+<div class="loading"></div>
+<div class="wrapper">
+    <div class="container">
+        <include file="public/logo"/>
+
+        <div class="main-wrap pt80">
+            <!-- 公司简介 -->
+            <div class="company-intro">
+                <h1>乐于创意，勤于<span class="yellow">解惑</span></h1>
+                <!-- <h2>Be creative and open to <span class="yellow">solutions</span></h2> -->
+                <p id="company-p">深圳市解惑文化传播有限公司创立于2015年，现位于深圳市罗湖区，是一家以影视制作、品牌设计、活动策划为主体的综合性文化传媒企业</p>
+            </div>
+            <!-- ./公司简介 -->
+
+            <!-- 图片轮播 -->
+            <div class="loop-album">
+                <!-- 企业简介/行业资讯/服务项目/成功案例/团队成员/公司动态/联系我们 -->
+                <div id="box">
+                    <div id="list">
+                        <ul>
+                            <li class="hove"  srcc="{:url('index/introduce')}" >
+                                <div class="into">
+                                    <h6><a href="">企业简介 Company profile <i class="intro-icon"></i></a></h6>
+                                    <div class="separate-line"></div>
+                                </div>
+                                <div class="list-img">
+                                    <a href="">
+                                        <img src="__TMPL__/asset/images/album/profile-sm.png" alt="" scrbg="__TMPL__/asset/images/album/profile-lg.png" scrhov="__TMPL__/asset/images/album/profile-lg.png">
+                                        <p class="intro">深圳市解惑文化传播有限公司创立于2015年，现位于深圳市罗湖区，是一家以影视制作、品牌设计、活动策划为主体的综合性文化传媒企业</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li srcc="{:url('index/info')}" >
+                                <div class="into">
+                                    <h6><a>行业资讯 Industry information <i class="intro-icon"></i></a></h6>
+                                    <div class="separate-line"></div>
+                                </div>
+                                <div class="list-img">
+                                    <a>
+                                        <img src="__TMPL__/asset/images/album/infor-sm.png" alt="" scrbg="__TMPL__/asset/images/album/infor-lg.png" scrhov="__TMPL__/asset/images/album/infor-lg.png">
+                                        <p class="intro"></p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li srcc="{:url('index/service')}">
+                                <div class="into">
+                                    <h6><a>服务项目 Service items <i class="intro-icon"></i></a></h6>
+                                    <div class="separate-line"></div>
+                                </div>
+                                <div class="list-img">
+                                    <a>
+                                        <img src="__TMPL__/asset/images/album/project-sm.png" alt="" scrbg="__TMPL__/asset/images/album/project-lg.png" scrhov="__TMPL__/asset/images/album/project-lg.png">
+                                        <p class="intro">解惑传媒的业务服务包含企业宣传片制作、广告片制作、产品拍摄、视频剪辑、平面拍摄、活动摄影、动画制作、LOGO设计、名片设计、画册设计、网络推广</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li srcc="{:url('index/cases')}">
+                                <div class="into">
+                                    <h6><a >成功案例 Success cases <i class="intro-icon"></i></a></h6>
+                                    <div class="separate-line"></div>
+                                </div>
+                                <div class="list-img">
+                                    <a>
+                                        <img src="__TMPL__/asset/images/album/case-sm.png" alt="" scrbg="__TMPL__/asset/images/album/case-lg.png" scrhov="__TMPL__/asset/images/album/case-lg.png">
+                                        <p class="intro">解惑传媒拥有一支经验丰富的策划执行团队、完善的制作设备和专业的整体运作能力，保障了各类项目策划执行的成功高效，在行业内树立了良好的品牌形象和商业信誉</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li srcc="{:url('index/team')}">
+                                <div class="into">
+                                    <h6><a >团队成员 Our stuff <i class="intro-icon"></i></a></h6>
+                                    <div class="separate-line"></div>
+                                </div>
+                                <div class="list-img">
+                                    <a >
+                                        <img src="__TMPL__/asset/images/album/members-sm.png" alt="" scrbg="__TMPL__/asset/images/album/members-lg.png" scrhov="__TMPL__/asset/images/album/members-lg.png">
+                                        <p class="intro">解惑传媒自创立以来，一直秉承“乐于创意，勤于解惑”的理念，在传媒领域不断创新，积极把握每一次灵感的迸发，长久的实战经验成就了一支视角独特，技术精湛，思路开阔，反应迅速的专业制作团队</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li srcc="{:url('index/news')}">
+                                <div class="into">
+                                    <h6><a>公司动态 Company news <i class="intro-icon"></i></a></h6>
+                                    <div class="separate-line"></div>
+                                </div>
+                                <div class="list-img">
+                                    <a>
+                                        <img src="__TMPL__/asset/images/album/dynamic-sm.png" alt="" scrbg="__TMPL__/asset/images/album/dynamic-lg.png" scrhov="__TMPL__/asset/images/album/dynamic-lg.png">
+                                        <p class="intro">解惑开始进军影视传媒行业，扛起了摄像机，架起了灯光，凹起了造型……为多家公司拍摄了宣传片，微电影、概念片等商业视频</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li srcc="{:url('index/contact')}">
+                                <div class="into">
+                                    <h6><a>联系我们 Contact us <i class="intro-icon"></i></a></h6>
+                                    <div class="separate-line"></div>
+                                </div>
+                                <div class="list-img">
+                                    <a >
+                                        <img src="__TMPL__/asset/images/album/contact-sm.png" alt="" scrbg="__TMPL__/asset/images/album/contact-lg.png" scrhov="__TMPL__/asset/images/album/contact-lg.png">
+                                        <p class="intro"></p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ./图片轮播 -->
+        </div>
+
+
+        <include file="public/footer"/>
+    </div>
+
+
+</div>
+
+<script src="__TMPL__/asset/js/jquery.js"></script>
+<script src="__TMPL__/asset/js/index-main.js"></script>
+</body>
+</html>
